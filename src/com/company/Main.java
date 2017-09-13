@@ -15,7 +15,12 @@ public class Main {
 
     //Opdracht 1
     private void run(){
+        Opdracht1();
         Opdracht2(10);
+    }
+
+
+    private void Opdracht1(){
         //Create a new array
         ArrayList<Integer> ints = new ArrayList<>();
         //Create a new random
@@ -107,8 +112,6 @@ public class Main {
     //Opdracht 1
     private ArrayList<Integer> insertionSort(ArrayList<Integer> listToSort) {
 
-        //A counter that will help us identify, the byteValue of dupplicated numbers
-        int counterLoop = 0;
         //Loop through the unsorted list
         for(Integer number: listToSort){
 
@@ -116,7 +119,7 @@ public class Main {
             int current = number;
 
             //A counter that will start from the previous value instead of the current value
-            int counter = counterLoop-1;
+            int counter = listToSort.indexOf(number)-1;
 
             //Loop throught the previous elements to check if they are smaller or larger than our current string
             while (counter != -1) {
@@ -124,17 +127,17 @@ public class Main {
                 if(current <= listToSort.get(counter)){
                     //Create a temporary variable to hold the larger value
                     int temp = listToSort.get(counter);
+                    //The index position of the current value
+                    int currentIndex = listToSort.indexOf(number);
                     //Swap values
                     listToSort.set(counter,current);
-                    listToSort.set(counterLoop,temp);
+                    listToSort.set(currentIndex,temp);
                     //Relocate the new position of our current string that we were comparing
                     current = listToSort.get(counter);
                 }
                 //Go back to the previous value
                 counter--;
             }
-            //Count the byteValue position
-            counterLoop++;
 
         }
         //Return a sorted list
