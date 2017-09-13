@@ -14,9 +14,9 @@ public class Main {
 
     //Opdracht 1
     private void run() {
-      // opdracht1(5000);
-        //opdracht2(10);
-       opdracht3(40,3);
+        // opdracht1(5000);
+        opdracht2(40);
+        opdracht3(1000, 40);
     }
 
     private ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right) {
@@ -85,8 +85,7 @@ public class Main {
         thread.start();
         try {
             thread.join();
-        }
-        catch (InterruptedException ex){
+        } catch (InterruptedException ex) {
         }
         //Print out sorted array and duration
         System.out.printf("Sorted array: " + ints.toString() + "\n");
@@ -99,8 +98,7 @@ public class Main {
     }
 
 
-
-    private ArrayList<Integer> getRandomNumberArray(int max){
+    private ArrayList<Integer> getRandomNumberArray(int max) {
         ArrayList<Integer> row = new ArrayList<>();
         //Create a new random
         Random random = new Random();
@@ -113,22 +111,23 @@ public class Main {
             linkedHashSet.add(rand);
         }
         //Add the set to the arraylist for sorting
-        for (Integer integer : linkedHashSet){
+        for (Integer integer : linkedHashSet) {
             row.add(integer);
         }
         return row;
     }
+
     //Opdracht 2
     private void opdracht2(int arraySize) {
         //Create 3 arrays
         ArrayList<Integer> left = new ArrayList<>();
         ArrayList<Integer> right = new ArrayList<>();
         ArrayList<Integer> row = getRandomNumberArray(arraySize);
-       //Split array
-        for (int j = 0; j < arraySize / 2; j++) {
+        //Split array
+        for (int j = 0; j < row.size() / 2; j++) {
             left.add(row.get(j));
         }
-        for (int j = arraySize / 2 + 1; j < arraySize; j++) {
+        for (int j = arraySize / 2 + 1; j < row.size(); j++) {
             right.add(row.get(j));
         }
         InsertionSort sort1 = new InsertionSort(left);
@@ -142,7 +141,19 @@ public class Main {
             t2.join();
         } catch (InterruptedException ex) {
         }
-        ArrayList<Integer> merged = merge(left,right);
+        ArrayList<Integer> merged = new ArrayList<>();
+        merged.addAll(left);
+        merged.addAll(right);
+        InsertionSort finalSort = new InsertionSort(merged);
+        Thread finalThead = new Thread(finalSort);
+        finalThead.run();
+        try{
+            finalThead.join();
+        }
+        catch (InterruptedException ex){
+        }
+
+
         //Print out sorted array and duration
         System.out.printf("Sorted array: " + merged.toString() + "\n");
         //Clear the list
@@ -154,26 +165,26 @@ public class Main {
         //From milliseconds to seconds
         //duration = duration / 1000;
         //Print out the duration of the whole process
-       // System.out.println("Duration: " + duration + " seconds");
+        // System.out.println("Duration: " + duration + " seconds");
     }
 
 
     //Opdracht 3
-    private void opdracht3(int arraySize,int threshold){
+    private void opdracht3(int arraySize, int threshold) {
         //Create an array
         ArrayList<Integer> row = getRandomNumberArray(arraySize);
         //Create startTimer
         long startTime = System.currentTimeMillis();
-        InsertionSortSplitter insertionSortSplitter = new InsertionSortSplitter(row,threshold);
+        InsertionSortSplitter insertionSortSplitter = new InsertionSortSplitter(row, threshold);
         Thread run = new Thread(insertionSortSplitter);
         run.start();
         try {
             run.join();
         } catch (InterruptedException ex) {
         }
-        row = row;
+        row = insertionSortSplitter.getListToSort();
+        int a = 0;
     }
-
 
 
     public class InsertionSort implements Runnable {
@@ -277,7 +288,7 @@ public class Main {
 
     }
 
-    public class InsertionSortSplitter implements Runnable{
+    public class InsertionSortSplitter implements Runnable {
 
         private ArrayList<Integer> listToSort;
         private int threshold;
@@ -287,7 +298,7 @@ public class Main {
         public void run() {
 
             //Split the array if the the size is above the threshold
-            if(listToSort.size() > threshold){
+            if (listToSort.size() > threshold) {
                 ArrayList<Integer> left = new ArrayList<>();
                 ArrayList<Integer> right = new ArrayList<>();
                 for (int j = 0; j < listToSort.size() / 2; j++) {
@@ -296,8 +307,8 @@ public class Main {
                 for (int j = listToSort.size() / 2 + 1; j < listToSort.size(); j++) {
                     right.add(listToSort.get(j));
                 }
-                InsertionSortSplitter sort1 = new InsertionSortSplitter(left,threshold);
-                InsertionSortSplitter sort2 = new InsertionSortSplitter(right,threshold);
+                InsertionSortSplitter sort1 = new InsertionSortSplitter(left, threshold);
+                InsertionSortSplitter sort2 = new InsertionSortSplitter(right, threshold);
                 Thread t1 = new Thread(sort1);
                 Thread t2 = new Thread(sort2);
                 t1.start();
@@ -307,9 +318,19 @@ public class Main {
                     t2.join();
                 } catch (InterruptedException ex) {
                 }
-                merge(left,right);
+                ArrayList<Integer> combinedList = new ArrayList<>();
+                combinedList.addAll(left);
+                combinedList.addAll(right);
+                InsertionSort finalsort1 = new InsertionSort(combinedList);
+                Thread finalThread = new Thread(finalsort1);
+                finalThread.start();
+                try {
+                    finalThread.join();
+                } catch (InterruptedException ex) {
+                }
+                listToSort = combinedList;
 
-            }else{
+            } else {
                 InsertionSort s = new InsertionSort(listToSort);
                 Thread run = new Thread(s);
                 run.start();
@@ -317,15 +338,18 @@ public class Main {
                     run.join();
                 } catch (InterruptedException ex) {
                 }
-
-
             }
         }
 
-        InsertionSortSplitter(ArrayList<Integer> listToSort, int threshhold){
+        InsertionSortSplitter(ArrayList<Integer> listToSort, int threshhold) {
             this.listToSort = listToSort;
             this.threshold = threshhold;
         }
+
+        public ArrayList<Integer> getListToSort() {
+            return listToSort;
+        }
+
         public void main(String args[]) {
             new Main().run();
         }
