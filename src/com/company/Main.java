@@ -16,7 +16,7 @@ public class Main {
     private void run() {
         // opdracht1(5000);
         //opdracht2(40);
-        opdracht3(100000, 100);
+        opdracht3(1000000, 100);
     }
 
     private ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right,ArrayList<Integer> listToSort) {
@@ -166,7 +166,7 @@ public class Main {
         } catch (InterruptedException ex) {
         }
         row = insertionSortSplitter.getListToSort();
-        System.out.printf("Sorted array: " + row.toString() + "\n");
+        System.out.printf("Done");
 
     }
 

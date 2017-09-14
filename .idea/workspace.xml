@@ -21,13 +21,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="974">
-              <caret line="330" column="0" lean-forward="false" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-                <element signature="e#12877#12878#0" expanded="true" />
-                <element signature="e#12918#12919#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,11 +37,11 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1505332233183" expanded="true" signature="60723:60748" ph="..." />
-                <marker date="1505332233183" expanded="true" signature="60723:60765" ph="..." />
-                <marker date="1505332233183" expanded="true" signature="60723:60783" ph="..." />
-                <marker date="1505332233183" expanded="true" signature="60723:60796" ph="..." />
-                <marker date="1505332233183" expanded="true" signature="60723:60811" ph="..." />
+                <marker date="1505385582410" expanded="true" signature="56278:56502" ph="..." />
+                <marker date="1505385582410" expanded="true" signature="56278:56520" ph="..." />
+                <marker date="1505385582410" expanded="true" signature="56278:56533" ph="..." />
+                <marker date="1505385582410" expanded="true" signature="56278:56548" ph="..." />
+                <marker date="1505385582410" expanded="true" signature="56301:56485" ph="..." />
               </folding>
             </state>
           </provider>
@@ -54,6 +52,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>insert</find>
+      <find>inse</find>
+      <find>merge</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -78,10 +78,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="99" />
-    <option name="y" value="105" />
+    <option name="x" value="417" />
+    <option name="y" value="365" />
     <option name="width" value="1378" />
-    <option name="height" value="623" />
+    <option name="height" value="701" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -207,6 +207,8 @@
       <workItem from="1505211185603" duration="993000" />
       <workItem from="1505302160642" duration="1135000" />
       <workItem from="1505329628951" duration="3203000" />
+      <workItem from="1505371472964" duration="5954000" />
+      <workItem from="1505384417189" duration="1045000" />
     </task>
     <task id="LOCAL-00001" summary="Opdracht 1 af">
       <created>1505212142727</created>
@@ -229,26 +231,32 @@
       <option name="project" value="LOCAL" />
       <updated>1505308924542</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="merge">
+      <created>1505384040342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1505384040342</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27309000" />
+    <option name="totallyTimeSpent" value="34308000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15100317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4400631" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -258,13 +266,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49736008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49684542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -281,17 +290,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49736008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49684542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26109937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4400631" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -319,68 +329,84 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>330</line>
-          <properties />
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>323</line>
-          <properties />
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>174</line>
+          <line>157</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>176</line>
+          <line>159</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>101</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>103</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>104</line>
+          <line>87</line>
           <properties />
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>106</line>
+          <line>89</line>
           <properties />
           <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>116</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
+          <line>168</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="118" />
+      <option name="time" value="140" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="right" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/Box Sync/Box Sync/week1/Algorithms_and_Datastructures/src/nl/saxion/hboict/ad/week2/Application.java" />
@@ -389,11 +415,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505332233183" expanded="true" signature="60723:60748" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60765" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60783" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60796" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60811" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56502" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56520" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56533" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56548" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56301:56485" ph="..." />
           </folding>
         </state>
       </provider>
@@ -405,8 +431,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,11 +441,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505332233183" expanded="true" signature="60723:60748" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60765" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60783" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60796" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60811" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56502" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56520" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56533" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56548" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56301:56485" ph="..." />
           </folding>
         </state>
       </provider>
@@ -434,8 +458,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -447,8 +469,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -460,8 +480,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -473,8 +491,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -486,8 +502,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -499,8 +513,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -512,8 +524,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,8 +535,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,8 +546,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -552,8 +558,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,8 +569,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -578,8 +580,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -591,8 +591,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,8 +602,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -617,8 +613,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -630,8 +624,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -650,8 +642,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -663,8 +653,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -676,8 +664,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -689,8 +675,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,8 +686,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,8 +697,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -728,8 +708,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -739,11 +717,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1505332233183" expanded="true" signature="60723:60748" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60765" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60783" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60796" ph="..." />
-            <marker date="1505332233183" expanded="true" signature="60723:60811" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56502" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56520" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56533" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56278:56548" ph="..." />
+            <marker date="1505385582410" expanded="true" signature="56301:56485" ph="..." />
           </folding>
         </state>
       </provider>
@@ -755,8 +733,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,8 +744,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -781,8 +755,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -794,8 +766,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -807,8 +777,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -820,8 +788,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -833,8 +799,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -846,8 +810,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -866,8 +828,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -879,8 +839,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -892,8 +850,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,8 +861,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,8 +872,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -931,8 +883,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -944,8 +894,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -954,13 +902,11 @@
     <entry file="file://D:/Box Sync/Box Sync/week1 (gdswa@outlook.com)/Algorithms_and_Datastructures/src/nl/saxion/hboict/ad/week2/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="974">
-          <caret line="330" column="0" lean-forward="false" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="167" column="0" lean-forward="false" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#merge#0;class#InsertionSort#0;class#Main#0" expanded="false" />
-            <element signature="e#12877#12878#0" expanded="true" />
-            <element signature="e#12918#12919#0" expanded="true" />
           </folding>
         </state>
       </provider>
