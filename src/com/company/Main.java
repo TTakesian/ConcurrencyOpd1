@@ -15,64 +15,47 @@ public class Main {
     //Opdracht 1
     private void run() {
         // opdracht1(5000);
-        opdracht2(40);
-        opdracht3(1000, 40);
+        //opdracht2(40);
+        opdracht3(100000, 100);
     }
 
-    private ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right) {
-        int indexLinks = 0;
-        int indexRechts = 0;
-        ArrayList<Integer> merge = new ArrayList<>();
-        while (merge.size() < (left.size() + right.size())) {
-            if (indexLinks != left.size() && indexRechts != right.size()) {
-                if (right.get(indexRechts) > left.get(indexLinks)) {
-                    if (merge.size() == 0) {
-                        merge.add(left.get(indexLinks));
-                        indexLinks++;
-                    } else {
-                        merge.add(merge.size(), left.get(indexLinks));
-                        indexLinks++;
-                    }
-                } else if (right.get(indexRechts) < left.get(indexLinks)) {
-                    if (merge.size() == 0) {
-                        merge.add(right.get(indexRechts));
-                        indexRechts++;
-                    } else {
-                        merge.add(merge.size(), right.get(indexRechts));
-                        indexRechts++;
-                    }
-                } else if (right.get(indexRechts) == left.get(indexLinks)) {
+    private ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right,ArrayList<Integer> listToSort) {
+        int leftIndex = 0;
+        int rightIndex = 0;
+        int wholeIndex = 0;
 
-                    if (merge.size() == 0) {
-                        merge.add(right.get(indexRechts));
-                        merge.add(left.get(indexLinks));
-                        indexRechts++;
-                        indexLinks++;
-                    } else {
-                        merge.add(merge.size(), right.get(indexRechts));
-                        merge.add(merge.size(), left.get(indexLinks));
-                        indexRechts++;
-                        indexLinks++;
-                    }
-
-                }
-
-            } else if (indexLinks == left.size() && indexRechts != right.size()) {
-                while (indexRechts < right.size()) {
-                    merge.add(merge.size(), right.get(indexRechts));
-                    indexRechts++;
-                }
-
-            } else if (indexLinks != left.size() && indexRechts == right.size()) {
-                while (indexLinks < left.size()) {
-                    merge.add(merge.size(), left.get(indexLinks));
-                    indexLinks++;
-                }
-
+        // As long as neither the left nor the right ArrayList has
+        // been used up, keep taking the smaller of left.get(leftIndex)
+        // or right.get(rightIndex) and adding it at both.get(bothIndex).
+        while (leftIndex < left.size() && rightIndex < right.size()) {
+            if ( (left.get(leftIndex).compareTo(right.get(rightIndex))) < 0) {
+                listToSort.set(wholeIndex, left.get(leftIndex));
+                leftIndex++;
+            } else {
+                listToSort.set(wholeIndex, right.get(rightIndex));
+                rightIndex++;
             }
-
+            wholeIndex++;
         }
-        return merge;
+
+        ArrayList<Integer> rest;
+        int restIndex;
+        if (leftIndex >= left.size()) {
+            // The left ArrayList has been use up...
+            rest = right;
+            restIndex = rightIndex;
+        } else {
+            // The right ArrayList has been used up...
+            rest = left;
+            restIndex = leftIndex;
+        }
+
+        // Copy the rest of whichever ArrayList (left or right) was not used up.
+        for (int i=restIndex; i<rest.size(); i++) {
+            listToSort.set(wholeIndex, rest.get(i));
+            wholeIndex++;
+        }
+        return listToSort;
     }
 
     private void opdracht1(int max) {
@@ -183,7 +166,8 @@ public class Main {
         } catch (InterruptedException ex) {
         }
         row = insertionSortSplitter.getListToSort();
-        int a = 0;
+        System.out.printf("Sorted array: " + row.toString() + "\n");
+
     }
 
 
@@ -224,38 +208,37 @@ public class Main {
             this.listToSort = listToSort;
         }
 
-        private ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right) {
+        private ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right,ArrayList<Integer> listToSort) {
             int indexLinks = 0;
             int indexRechts = 0;
-            ArrayList<Integer> merge = new ArrayList<>();
-            while (merge.size() < (left.size() + right.size())) {
+            while (listToSort.size() < (left.size() + right.size())) {
                 if (indexLinks != left.size() && indexRechts != right.size()) {
                     if (right.get(indexRechts) > left.get(indexLinks)) {
-                        if (merge.size() == 0) {
-                            merge.add(left.get(indexLinks));
+                        if (listToSort.size() == 0) {
+                            listToSort.add(left.get(indexLinks));
                             indexLinks++;
                         } else {
-                            merge.add(merge.size(), left.get(indexLinks));
+                            listToSort.add(listToSort.size(), left.get(indexLinks));
                             indexLinks++;
                         }
                     } else if (right.get(indexRechts) < left.get(indexLinks)) {
-                        if (merge.size() == 0) {
-                            merge.add(right.get(indexRechts));
+                        if (listToSort.size() == 0) {
+                            listToSort.add(right.get(indexRechts));
                             indexRechts++;
                         } else {
-                            merge.add(merge.size(), right.get(indexRechts));
+                            listToSort.add(listToSort.size(), right.get(indexRechts));
                             indexRechts++;
                         }
                     } else if (right.get(indexRechts) == left.get(indexLinks)) {
 
-                        if (merge.size() == 0) {
-                            merge.add(right.get(indexRechts));
-                            merge.add(left.get(indexLinks));
+                        if (listToSort.size() == 0) {
+                            listToSort.add(right.get(indexRechts));
+                            listToSort.add(left.get(indexLinks));
                             indexRechts++;
                             indexLinks++;
                         } else {
-                            merge.add(merge.size(), right.get(indexRechts));
-                            merge.add(merge.size(), left.get(indexLinks));
+                            listToSort.add(listToSort.size(), right.get(indexRechts));
+                            listToSort.add(listToSort.size(), left.get(indexLinks));
                             indexRechts++;
                             indexLinks++;
                         }
@@ -264,20 +247,20 @@ public class Main {
 
                 } else if (indexLinks == left.size() && indexRechts != right.size()) {
                     while (indexRechts < right.size()) {
-                        merge.add(merge.size(), right.get(indexRechts));
+                        listToSort.add(listToSort.size(), right.get(indexRechts));
                         indexRechts++;
                     }
 
                 } else if (indexLinks != left.size() && indexRechts == right.size()) {
                     while (indexLinks < left.size()) {
-                        merge.add(merge.size(), left.get(indexLinks));
+                        listToSort.add(listToSort.size(), left.get(indexLinks));
                         indexLinks++;
                     }
 
                 }
 
             }
-            return merge;
+            return listToSort;
         }
 
 
@@ -304,7 +287,7 @@ public class Main {
                 for (int j = 0; j < listToSort.size() / 2; j++) {
                     left.add(listToSort.get(j));
                 }
-                for (int j = listToSort.size() / 2 + 1; j < listToSort.size(); j++) {
+                for (int j = listToSort.size() / 2 ; j < listToSort.size(); j++) {
                     right.add(listToSort.get(j));
                 }
                 InsertionSortSplitter sort1 = new InsertionSortSplitter(left, threshold);
@@ -318,16 +301,7 @@ public class Main {
                     t2.join();
                 } catch (InterruptedException ex) {
                 }
-                ArrayList<Integer> combinedList = new ArrayList<>();
-                combinedList.addAll(left);
-                combinedList.addAll(right);
-                InsertionSort finalsort1 = new InsertionSort(combinedList);
-                Thread finalThread = new Thread(finalsort1);
-                finalThread.start();
-                try {
-                    finalThread.join();
-                } catch (InterruptedException ex) {
-                }
+                ArrayList<Integer> combinedList = merge(left,right,listToSort);
                 listToSort = combinedList;
 
             } else {
