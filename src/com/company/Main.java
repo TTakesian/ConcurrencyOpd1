@@ -14,8 +14,8 @@ public class Main {
 
     //Opdracht 1
     private void run() {
-        // opdracht1(5000);
-        //opdracht2(40);
+        opdracht1(1000);
+        opdracht2(40);
         opdracht3(1000000, 100);
     }
 
@@ -91,7 +91,12 @@ public class Main {
         //Loop max times and add the random generated numbers to our set
         for (int j = 0; j < max; j++) {
             rand = random.nextInt(max) + 1;
-            linkedHashSet.add(rand);
+            boolean added = linkedHashSet.contains(rand);
+            if(added){
+                j--;
+            }else {
+                linkedHashSet.add(rand);
+            }
         }
         //Add the set to the arraylist for sorting
         for (Integer integer : linkedHashSet) {
