@@ -17,7 +17,7 @@ public class Main {
      */
     private void run() {
        opdracht1(1000);
-       opdracht2(40);
+       opdracht2(1000);
        opdracht3(800000, 100);
     }
 
@@ -59,16 +59,14 @@ public class Main {
      * @param arraySize The length of the array
      */
     private void opdracht2(int arraySize) {
-        //Create 3 arrays
+        ArrayList<Integer> listToSort = getRandomNumberArray(arraySize);
         ArrayList<Integer> left = new ArrayList<>();
         ArrayList<Integer> right = new ArrayList<>();
-        ArrayList<Integer> row = getRandomNumberArray(arraySize);
-        //Split array
-        for (int j = 0; j < row.size() / 2; j++) {
-            left.add(row.get(j));
+        for (int j = 0; j < listToSort.size() / 2; j++) {
+            left.add(listToSort.get(j));
         }
-        for (int j = arraySize / 2 + 1; j < row.size(); j++) {
-            right.add(row.get(j));
+        for (int j = listToSort.size() / 2 ; j < listToSort.size(); j++) {
+            right.add(listToSort.get(j));
         }
         InsertionSort sort1 = new InsertionSort(left);
         InsertionSort sort2 = new InsertionSort(right);
@@ -81,25 +79,9 @@ public class Main {
             t2.join();
         } catch (InterruptedException ex) {
         }
-        ArrayList<Integer> merged = new ArrayList<>();
-        merged.addAll(left);
-        merged.addAll(right);
-        InsertionSort finalSort = new InsertionSort(merged);
-        Thread finalThead = new Thread(finalSort);
-        finalThead.run();
-        try{
-            finalThead.join();
-        }
-        catch (InterruptedException ex){
-        }
-
-        //Print out sorted array and duration
-        System.out.printf("Sorted array: " + merged.toString() + "\n");
-        //Clear the list
-        row.clear();
+        ArrayList<Integer> combinedList = merge(left,right,listToSort);
+        listToSort = combinedList;
     }
-
-
     /***
      * This function will create a random numbers array using the getRandomNumberArray function
      * and then split the given array until each thread holds an array that has a length of the threshhold.
